@@ -9,6 +9,7 @@
 default partial
 xkb_symbols "full" {
     include "ckl(base)"
+    include "ckl(mods)"
     include "ckl(sym)"
     include "ckl(sym_activate)"
     include "ckl(nav)"
@@ -195,10 +196,27 @@ xkb_symbols "nav" {
 };
 
 partial modifier_keys
+xkb_symbols "mods" {
+    key.type[Group1] = "ONE_LEVEL";
+
+    key <LWIN> { [ Super_R ] };
+    modifier_map Mod4 { <LWIN> };
+
+    key <LALT> { [ Control_L ] };
+    modifier_map Control { <LALT> };
+
+    key <RALT> { [ Shift_R ] };
+    modifier_map Shift { <RALT> };
+
+    key <RCTL> { [ Alt_L ] };
+    modifier_map Mod1 { <RCTL> };
+};
+
+partial modifier_keys
 xkb_symbols "sym_activate" {
     key <TAB> { type[Group1]="ONE_LEVEL",
-                 symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
+                symbols[Group1]=[ VoidSymbol ],
+                actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
 };
 
