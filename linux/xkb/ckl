@@ -116,7 +116,7 @@ xkb_symbols "sym" {
     key <AC08> { [ NoSymbol, NoSymbol, 4, 4 ] };
     key <AC09> { [ NoSymbol, NoSymbol, 5, 5 ] };
     key <AC10> { [ NoSymbol, NoSymbol, 6, 6 ] };
-    key <AC11> { [ NoSymbol, NoSymbol, 0, 0 ] };
+    key <AC11> { [ NoSymbol, NoSymbol ] };
 
     key <AB01> { [ NoSymbol, NoSymbol ] };
     key <AB02> { [ NoSymbol, NoSymbol ] };
@@ -124,10 +124,10 @@ xkb_symbols "sym" {
     key <AB04> { [ NoSymbol, NoSymbol ] };
     key <AB05> { [ NoSymbol, NoSymbol ] };
     key <AB06> { [ NoSymbol, NoSymbol ] };
-    key <AB07> { [ NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol, 1, 1  ] };
-    key <AB09> { [ NoSymbol, NoSymbol, 2, 2  ] };
-    key <AB10> { [ NoSymbol, NoSymbol, 3, 3  ] };
+    key <AB07> { [ NoSymbol, NoSymbol, 0, 0 ] };
+    key <AB08> { [ NoSymbol, NoSymbol, 1, 1 ] };
+    key <AB09> { [ NoSymbol, NoSymbol, 2, 2 ] };
+    key <AB10> { [ NoSymbol, NoSymbol, 3, 3 ] };
 };
 
 partial alphanumeric_keys modifier_keys
