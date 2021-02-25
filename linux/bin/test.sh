@@ -5,7 +5,7 @@ then
     sudo cp xkb/ckl /usr/share/X11/xkb/symbols/
 fi
 
-setxkbmap ckl -option ''
+setxkbmap ckl -option '' -v 9
 
 zenity --info --text="Finish"
 
