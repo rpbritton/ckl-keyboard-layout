@@ -104,9 +104,9 @@ xkb_symbols "sym" {
     key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, underscore ] };
     key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft, bracketleft ] };
     key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright, bracketright ] };
-    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciicircum, asciicircum ] };
+    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bar, bar ] };
 
-    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
+    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
     key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, less, less ] };
     key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, greater, greater ] };
     key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, equal ] };
@@ -127,14 +127,14 @@ xkb_symbols "sym" {
 
     // Bottom row
     key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, numbersign, numbersign ] };
-    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, dollar, dollar ] };
-    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bar, bar ] };
-    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
+    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
+    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, apostrophe ] };
+    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
 
     key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, percent, percent ] };
-    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, apostrophe ] };
+    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciicircum, asciicircum ] };
+    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, dollar, dollar ] };
+    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, percent, percent ] };
 };
 
 partial modifier_keys
@@ -158,6 +158,9 @@ xkb_symbols "mods" {
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
     key <RCTL> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    include "level5(modifier_mapping)"
+    key <RWIN> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
 
