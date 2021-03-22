@@ -153,10 +153,10 @@ xkb_symbols "mods" {
     modifier_map Mod1 { <LWIN> };
     key <LALT> { [ Shift_L ] };
     modifier_map Shift { <LALT> };
-    key <SPCE> { [ space ] };
-    key <RALT> { symbols[Group1]=[ VoidSymbol ],
+    key <SPCE> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
+    key <RALT> { [ space ] };
     key <RCTL> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
