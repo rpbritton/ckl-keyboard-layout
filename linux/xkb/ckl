@@ -4,9 +4,10 @@
 default partial
 xkb_symbols "full" {
     include "ckl(base)"
-    include "ckl(nav)"
-    include "ckl(sym)"
-    include "ckl(mods)"
+    include "ckl(navigation)"
+    include "ckl(symbol)"
+    //include "ckl(function)"
+    include "ckl(modifier)"
 };
 
 partial alphanumeric_keys
@@ -54,27 +55,27 @@ xkb_symbols "base" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "nav" {
+xkb_symbols "navigation" {
     key.type[Group1] = "FOUR_LEVEL";
 
     // Top row
     key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD02> { [ NoSymbol, NoSymbol, 1, 1 ] };
-    key <AD03> { [ NoSymbol, NoSymbol, 2, 2 ] };
-    key <AD04> { [ NoSymbol, NoSymbol, 3, 3 ] };
+    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AD07> { [ NoSymbol, NoSymbol, Page_Up, Page_Up ] };
     key <AD08> { [ NoSymbol, NoSymbol, Home, Home ] };
     key <AD09> { [ NoSymbol, NoSymbol, Up, Up ] };
     key <AD10> { [ NoSymbol, NoSymbol, End, End ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD11> { [ NoSymbol, NoSymbol, Delete, Delete ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, period, period ] };
-    key <AC02> { [ NoSymbol, NoSymbol, 4, 4 ] };
-    key <AC03> { [ NoSymbol, NoSymbol, 5, 5 ] };
-    key <AC04> { [ NoSymbol, NoSymbol, 6, 6 ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AC07> { [ NoSymbol, NoSymbol, Page_Down, Page_Down ] };
@@ -84,10 +85,10 @@ xkb_symbols "nav" {
     key <AC11> { [ NoSymbol, NoSymbol, Escape, Escape ] };
 
     // Bottom row
-    key <AB01> { [ NoSymbol, NoSymbol, 7, 7 ] };
-    key <AB02> { [ NoSymbol, NoSymbol, 8, 8 ] };
-    key <AB03> { [ NoSymbol, NoSymbol, 9, 9 ] };
-    key <AB04> { [ NoSymbol, NoSymbol, 0, 0 ] };
+    key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
@@ -96,49 +97,49 @@ xkb_symbols "nav" {
 };
 
 partial alphanumeric_keys
-xkb_symbols "sym" {
+xkb_symbols "symbol" {
     key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, at, at ] };
-    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, underscore ] };
-    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft, bracketleft ] };
-    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright, bracketright ] };
-    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bar, bar ] };
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, percent ] };
+    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, 1 ] };
+    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, 2 ] };
+    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, 3 ] };
+    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
 
     key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
-    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, less, less ] };
-    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, greater, greater ] };
-    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, equal ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, ampersand, ampersand ] };
+    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft, less ] };
+    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright, greater ] };
+    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, asciicircum ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, dollar ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash, backslash ] };
-    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, slash, slash ] };
-    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft, braceleft ] };
-    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright, braceright ] };
-    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, asterisk ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, numbersign ] };
+    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
+    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
+    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
+    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, grave ] };
 
-    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, semicolon ] };
-    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, parenleft ] };
-    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, parenright ] };
-    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, minus ] };
-    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, colon ] };
+    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, underscore ] };
+    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, bracketleft ] };
+    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, bracketright ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, ampersand ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, bar ] };
 
     // Bottom row
-    key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, numbersign, numbersign ] };
-    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
-    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, apostrophe ] };
-    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
+    key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, 7 ] };
+    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, 8 ] };
+    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, 9 ] };
+    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, 0 ] };
 
-    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciicircum, asciicircum ] };
-    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, dollar, dollar ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, percent, percent ] };
+    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash, backslash ] };
+    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, slash, at ] };
+    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, question ] };
+    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, exclam ] };
 };
 
 partial modifier_keys
-xkb_symbols "mods" {
+xkb_symbols "modifier" {
     key.type[Group1] = "ONE_LEVEL";
 
     // Left column
@@ -153,19 +154,21 @@ xkb_symbols "mods" {
     modifier_map Mod1 { <LWIN> };
     key <LALT> { [ Shift_L ] };
     modifier_map Shift { <LALT> };
-    key <SPCE> { symbols[Group1]=[ VoidSymbol ],
+    key <SPCE> { [ space ] };
+    key <RALT> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
-    key <RALT> { [ space ] };
-    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
-    include "level5(modifier_mapping)"
-    key <RWIN> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
-    include "level5(modifier_mapping)"
+    //key <RCTL> { symbols[Group1]=[ VoidSymbol ],
+    //             actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    //include "level5(modifier_mapping)"
+    //key <RWIN> { symbols[Group1]=[ VoidSymbol ],
+    //             actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    //include "level5(modifier_mapping)"
 
     // Right column
-    key <AD12> { [ Delete ] };
+    key <AD12> { [ BackSpace ] };
     key <RTRN> { [ Return ] };
-    key <RTSH> { [ BackSpace ] };
+    key <RTSH> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    include "level5(modifier_mapping)"
 };
