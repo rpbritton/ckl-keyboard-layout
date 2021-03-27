@@ -65,11 +65,11 @@ xkb_symbols "navigation" {
     key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-    key <AD07> { [ NoSymbol, NoSymbol, Page_Up, Page_Up ] };
+    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AD08> { [ NoSymbol, NoSymbol, Home, Home ] };
     key <AD09> { [ NoSymbol, NoSymbol, Up, Up ] };
     key <AD10> { [ NoSymbol, NoSymbol, End, End ] };
-    key <AD11> { [ NoSymbol, NoSymbol, Delete, Delete ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     // Middle row
     key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
@@ -78,11 +78,11 @@ xkb_symbols "navigation" {
     key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-    key <AC07> { [ NoSymbol, NoSymbol, Page_Down, Page_Down ] };
+    key <AC07> { [ NoSymbol, NoSymbol, Page_Up, Page_Up ] };
     key <AC08> { [ NoSymbol, NoSymbol, Left, Left ] };
     key <AC09> { [ NoSymbol, NoSymbol, Down, Down ] };
     key <AC10> { [ NoSymbol, NoSymbol, Right, Right ] };
-    key <AC11> { [ NoSymbol, NoSymbol, Escape, Escape ] };
+    key <AC11> { [ NoSymbol, NoSymbol, Page_Down, Page_Down ] };
 
     // Bottom row
     key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
@@ -91,7 +91,7 @@ xkb_symbols "navigation" {
     key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AB08> { [ NoSymbol, NoSymbol, Tab, Tab ] };
     key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
@@ -185,7 +185,7 @@ xkb_symbols "modifier" {
     key.type[Group1] = "ONE_LEVEL";
 
     // Left column
-    key <TAB> { [ Tab ] };
+    key <TAB> { [ Escape ] };
     key <CAPS> { [ Control_L ] };
     modifier_map Control { <CAPS> };
     key <LFSH> { [ Super_L ] };
@@ -200,17 +200,15 @@ xkb_symbols "modifier" {
     key <RALT> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
-    //key <RCTL> { symbols[Group1]=[ VoidSymbol ],
-    //             actions[Group1]=[ SetMods(mods=LevelFive) ] };
-    //include "level5(modifier_mapping)"
-    //key <RWIN> { symbols[Group1]=[ VoidSymbol ],
-    //             actions[Group1]=[ SetMods(mods=LevelFive) ] };
-    //include "level5(modifier_mapping)"
-
-    // Right column
-    key <AD12> { [ BackSpace ] };
-    key <RTRN> { [ Return ] };
-    key <RTSH> { symbols[Group1]=[ VoidSymbol ],
+    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
+    key <RWIN> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    include "level5(modifier_mapping)"
+
+    // Right column
+    key <AD12> { [ Delete ] };
+    key <RTRN> { [ BackSpace ] };
+    key <RTSH> { [ Return ] };
 };
