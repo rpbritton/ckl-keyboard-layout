@@ -101,7 +101,7 @@ xkb_symbols "symbol" {
     key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, percent ] };
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, percent ] };
     key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, 1 ] };
     key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, 2 ] };
     key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, 3 ] };
@@ -111,10 +111,10 @@ xkb_symbols "symbol" {
     key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft, less ] };
     key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright, greater ] };
     key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, asciicircum ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, dollar ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, dollar ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, numbersign ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, numbersign ] };
     key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
     key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
     key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
@@ -124,7 +124,7 @@ xkb_symbols "symbol" {
     key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, bracketleft ] };
     key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, bracketright ] };
     key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, ampersand ] };
-    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, bar ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, bar ] };
 
     // Bottom row
     key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, 7 ] };
