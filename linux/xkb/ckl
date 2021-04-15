@@ -198,14 +198,14 @@ xkb_symbols "modifier" {
     modifier_map Shift { <LALT> };
     key <SPCE> { [ space ] };
     key <RALT> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    include "level5(modifier_mapping)"
+    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
-    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
-    include "level5(modifier_mapping)"
     key <RWIN> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
-    include "level5(modifier_mapping)"
+                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
+    include "level3(modifier_mapping)"
 
     // Right column
     key <AD12> { [ Delete ] };
