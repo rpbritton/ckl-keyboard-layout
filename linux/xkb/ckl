@@ -91,7 +91,7 @@ xkb_symbols "navigation" {
     key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol, Tab, Tab ] };
+    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
@@ -182,33 +182,33 @@ xkb_symbols "function" {
 
 partial modifier_keys
 xkb_symbols "modifier" {
-    key.type[Group1] = "ONE_LEVEL";
+    key.type[Group1] = "TWO_LEVEL";
 
     // Left column
-    key <TAB> { [ Escape ] };
-    key <CAPS> { [ Control_L ] };
+    key <TAB> { [ Tab, Tab ] };
+    key <CAPS> { [ Control_L, Control_L ] };
     modifier_map Control { <CAPS> };
-    key <LFSH> { [ Super_L ] };
+    key <LFSH> { [ Super_L, Super_L ] };
     modifier_map Mod4 { <LFSH> };
 
     // Bottom row
-    key <LWIN> { [ Alt_L ] };
+    key <LWIN> { [ Alt_L, Alt_L ] };
     modifier_map Mod1 { <LWIN> };
-    key <LALT> { [ Shift_L ] };
+    key <LALT> { [ Shift_L, Shift_L ] };
     modifier_map Shift { <LALT> };
-    key <SPCE> { [ space ] };
-    key <RALT> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    key <SPCE> { [ space, space ] };
+    key <RALT> { symbols[Group1]=[ VoidSymbol, VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive), SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
-    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
+    key <RCTL> { symbols[Group1]=[ VoidSymbol, VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelThree), SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
-    key <RWIN> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
+    key <RWIN> { symbols[Group1]=[ VoidSymbol, VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelThree), SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
 
     // Right column
-    key <AD12> { [ Delete ] };
-    key <RTRN> { [ BackSpace ] };
-    key <RTSH> { [ Return ] };
+    key <AD12> { [ Escape, Escape ] };
+    key <RTRN> { [ Return, Return ] };
+    key <RTSH> { [ BackSpace, Delete ] };
 };
