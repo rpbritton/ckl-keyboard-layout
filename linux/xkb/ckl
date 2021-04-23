@@ -101,7 +101,7 @@ xkb_symbols "symbol" {
     key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, percent ] };
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, percent ] };
     key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, 1 ] };
     key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, 2 ] };
     key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, 3 ] };
@@ -114,7 +114,7 @@ xkb_symbols "symbol" {
     key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, dollar ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, numbersign ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, numbersign ] };
     key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
     key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
     key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
