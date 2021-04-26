@@ -101,30 +101,30 @@ xkb_symbols "symbol" {
     key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, percent ] };
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, percent ] };
     key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, 1 ] };
     key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, 2 ] };
     key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, 3 ] };
     key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
 
-    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
+    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
     key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft, less ] };
     key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright, greater ] };
-    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, asciicircum ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, dollar ] };
+    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, asciicircum ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, dollar ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, numbersign ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, numbersign ] };
     key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
     key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
     key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
-    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, grave ] };
+    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, asciitilde ] };
 
-    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, underscore ] };
+    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus ] };
     key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, bracketleft ] };
     key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, bracketright ] };
-    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, ampersand ] };
-    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, bar ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, ampersand ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, bar ] };
 
     // Bottom row
     key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, 7 ] };
@@ -182,33 +182,33 @@ xkb_symbols "function" {
 
 partial modifier_keys
 xkb_symbols "modifier" {
-    key.type[Group1] = "TWO_LEVEL";
+    key.type[Group1] = "ONE_LEVEL";
 
     // Left column
-    key <TAB> { [ Tab, Tab ] };
-    key <CAPS> { [ Control_L, Control_L ] };
+    key <TAB> { [ Tab ] };
+    key <CAPS> { [ Control_L ] };
     modifier_map Control { <CAPS> };
-    key <LFSH> { [ Super_L, Super_L ] };
+    key <LFSH> { [ Super_L ] };
     modifier_map Mod4 { <LFSH> };
 
     // Bottom row
-    key <LWIN> { [ Alt_L, Alt_L ] };
+    key <LWIN> { [ Alt_L ] };
     modifier_map Mod1 { <LWIN> };
-    key <LALT> { [ Shift_L, Shift_L ] };
+    key <LALT> { [ Shift_L ] };
     modifier_map Shift { <LALT> };
-    key <SPCE> { [ space, space ] };
-    key <RALT> { symbols[Group1]=[ VoidSymbol, VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelFive), SetMods(mods=LevelFive) ] };
+    key <SPCE> { [ space ] };
+    key <RALT> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
-    key <RCTL> { symbols[Group1]=[ VoidSymbol, VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelThree), SetMods(mods=LevelThree) ] };
+    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
-    key <RWIN> { symbols[Group1]=[ VoidSymbol, VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelThree), SetMods(mods=LevelThree) ] };
+    key <RWIN> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
 
     // Right column
-    key <AD12> { [ Escape, Escape ] };
-    key <RTRN> { [ Return, Return ] };
-    key <RTSH> { [ BackSpace, Delete ] };
+    key <AD12> { [ Delete ] };
+    key <RTRN> { [ Return ] };
+    key <RTSH> { [ BackSpace ] };
 };
