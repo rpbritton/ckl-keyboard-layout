@@ -34,12 +34,12 @@
     "J",
     {c: "#bccf53"
     },
-    "Escape"
+    "Delete"
 ],
 [
     {w: 1.75
     },
-    "Ctrl",
+    "Ctrl\n\nEsc",
     {c: "#6ed04f"
     },
     "A",
@@ -104,7 +104,7 @@
     ".\n!",
     {c: "#95D051",w: 2.75
     },
-    "Backspace\nDelete"
+    "Backspace"
 ],
 [
     {x: 1.25,c: "#cccccc",w: 1.25
@@ -159,12 +159,12 @@
     "",
     {c: "#bccf53",a: 4
     },
-    "Escape"
+    "Delete"
 ],
 [
     {w: 1.75
     },
-    "Ctrl",
+    "Ctrl\n\nEsc",
     {c: "#6ed04f",a: 7
     },
     "",
@@ -229,7 +229,7 @@
     "",
     {c: "#95D051",a: 4,w: 2.75
     },
-    "Backspace\nDelete"
+    "Backspace"
 ],
 [
     {x: 1.25,c: "#cccccc",w: 1.25
@@ -284,12 +284,12 @@
     "+\n$",
     {c: "#bccf53"
     },
-    "Escape"
+    "Delete"
 ],
 [
     {w: 1.75
     },
-    "Ctrl",
+    "Ctrl\n\nEsc",
     {c: "#6ed04f"
     },
     ":\n#",
@@ -354,7 +354,7 @@
     ".\n!",
     {c: "#95D051",w: 2.75
     },
-    "Backspace\nDelete"
+    "Backspace"
 ],
 [
     {x: 1.25,c: "#cccccc",w: 1.25
@@ -409,12 +409,12 @@
     "",
     {c: "#bccf53",a: 4
     },
-    "Escape"
+    "Delete"
 ],
 [
     {w: 1.75
     },
-    "Ctrl",
+    "Ctrl\n\nEsc",
     {c: "#6ed04f",a: 7
     },
     "",
@@ -479,7 +479,7 @@
     "",
     {c: "#95D051",a: 4,w: 2.75
     },
-    "Backspace\nDelete"
+    "Backspace"
 ],
 [
     {x: 1.25,c: "#cccccc",w: 1.25
