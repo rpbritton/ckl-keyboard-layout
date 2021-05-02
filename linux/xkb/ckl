@@ -194,6 +194,9 @@ xkb_symbols "modifier" {
     // Bottom row
     key <LWIN> { [ Alt_L ] };
     modifier_map Mod1 { <LWIN> };
+    //key <LALT> { [ space ] };
+    //key <SPCE> { [ Shift_L ] };
+    //modifier_map Shift { <SPCE> };
     key <LALT> { [ Shift_L ] };
     modifier_map Shift { <LALT> };
     key <SPCE> { [ space ] };
