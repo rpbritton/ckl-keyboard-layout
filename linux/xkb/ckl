@@ -12,46 +12,47 @@ xkb_symbols "full" {
 
 partial alphanumeric_keys
 xkb_symbols "base" {
-    include "us"
     name[Group1]= "English (CKL)";
     key.type[Group1] = "TWO_LEVEL";
 
     // Top row
-    key <AD01> { [ q, Q ] };
-    key <AD02> { [ w, W ] };
-    key <AD03> { [ l, L ] };
-    key <AD04> { [ d, D ] };
-    key <AD05> { [ p, P ] };
+    key <AE02> { [ q, Q ] };
+    key <AE03> { [ w, W ] };
+    key <AE04> { [ l, L ] };
+    key <AE05> { [ d, D ] };
+    key <AE06> { [ p, P ] };
 
-    key <AD07> { [ k, K ] };
-    key <AD08> { [ m, M ] };
-    key <AD09> { [ u, U ] };
-    key <AD10> { [ y, Y ] };
-    key <AD11> { [ j, J ] };
+    key <AE07> { [ k, K ] };
+    key <AE08> { [ m, M ] };
+    key <AE09> { [ u, U ] };
+    key <AE10> { [ y, Y ] };
+    key <AE11> { [ apostrophe, quotedbl ] };
 
     // Middle row
-    key <AC01> { [ a, A ] };
-    key <AC02> { [ s, S ] };
-    key <AC03> { [ r, R ] };
-    key <AC04> { [ t, T ] };
-    key <AC05> { [ g, G ] };
+    key <AD01> { [ a, A ] };
+    key <AD02> { [ s, S ] };
+    key <AD03> { [ r, R ] };
+    key <AD04> { [ t, T ] };
+    key <AD05> { [ g, G ] };
 
-    key <AC07> { [ f, F ] };
-    key <AC08> { [ n, N ] };
-    key <AC09> { [ e, E ] };
-    key <AC10> { [ i, I ] };
-    key <AC11> { [ o, O ] };
+    key <AD07> { [ f, F ] };
+    key <AD08> { [ n, N ] };
+    key <AD09> { [ e, E ] };
+    key <AD10> { [ i, I ] };
+    key <AD11> { [ o, O ] };
 
     // Bottom row
-    key <AB01> { [ z, Z ] };
-    key <AB02> { [ x, X ] };
-    key <AB03> { [ c, C ] };
-    key <AB04> { [ v, V ] };
+    key <AC01> { [ z, Z ] };
+    key <AC02> { [ x, X ] };
+    key <AC03> { [ c, C ] };
+    key <AC04> { [ v, V ] };
+    key <AC05> { [ j, J ] };
 
-    key <AB07> { [ b, B ] };
-    key <AB08> { [ h, H ] };
-    key <AB09> { [ comma, question ] };
-    key <AB10> { [ period, exclam ] };
+    key <AC07> { [ b, B ] };
+    key <AC08> { [ h, H ] };
+    key <AC09> { [ comma, question ] };
+    key <AC10> { [ period, exclam ] };
+    key <AC11> { [ semicolon, colon ] };
 };
 
 partial alphanumeric_keys
@@ -59,41 +60,43 @@ xkb_symbols "navigation" {
     key.type[Group1] = "FOUR_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { [ NoSymbol, NoSymbol, F1, F1 ] };
+    key <AE04> { [ NoSymbol, NoSymbol, F2, F2 ] };
+    key <AE05> { [ NoSymbol, NoSymbol, F3, F3 ] };
+    key <AE06> { [ NoSymbol, NoSymbol, F10, F10 ] };
 
-    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD08> { [ NoSymbol, NoSymbol, Home, Home ] };
-    key <AD09> { [ NoSymbol, NoSymbol, Up, Up ] };
-    key <AD10> { [ NoSymbol, NoSymbol, End, End ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { [ NoSymbol, NoSymbol, Home, Home ] };
+    key <AE09> { [ NoSymbol, NoSymbol, Up, Up ] };
+    key <AE10> { [ NoSymbol, NoSymbol, End, End ] };
+    key <AE11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD02> { [ NoSymbol, NoSymbol, F4, F4 ] };
+    key <AD03> { [ NoSymbol, NoSymbol, F5, F5 ] };
+    key <AD04> { [ NoSymbol, NoSymbol, F6, F6 ] };
+    key <AD05> { [ NoSymbol, NoSymbol, F11, F11 ] };
 
-    key <AC07> { [ NoSymbol, NoSymbol, Page_Up, Page_Up ] };
-    key <AC08> { [ NoSymbol, NoSymbol, Left, Left ] };
-    key <AC09> { [ NoSymbol, NoSymbol, Down, Down ] };
-    key <AC10> { [ NoSymbol, NoSymbol, Right, Right ] };
-    key <AC11> { [ NoSymbol, NoSymbol, Page_Down, Page_Down ] };
+    key <AD07> { [ NoSymbol, NoSymbol, Page_Up, Page_Up ] };
+    key <AD08> { [ NoSymbol, NoSymbol, Left, Left ] };
+    key <AD09> { [ NoSymbol, NoSymbol, Down, Down ] };
+    key <AD10> { [ NoSymbol, NoSymbol, Right, Right ] };
+    key <AD11> { [ NoSymbol, NoSymbol, Page_Down, Page_Down ] };
 
     // Bottom row
-    key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC02> { [ NoSymbol, NoSymbol, F7, F7 ] };
+    key <AC03> { [ NoSymbol, NoSymbol, F8, F8 ] };
+    key <AC04> { [ NoSymbol, NoSymbol, F9, F9 ] };
+    key <AC05> { [ NoSymbol, NoSymbol, F12, F12 ] };
 
-    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 partial alphanumeric_keys
@@ -101,41 +104,43 @@ xkb_symbols "symbol" {
     key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, percent ] };
-    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, 1 ] };
-    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, 2 ] };
-    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, 3 ] };
-    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
+    key <AE02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, 0 ] };
+    key <AE03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 1, 1 ] };
+    key <AE04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 2, 2 ] };
+    key <AE05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 3, 3 ] };
+    key <AE06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciicircum, asciicircum ] };
 
-    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
-    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft, less ] };
-    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright, greater ] };
-    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, asciicircum ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, dollar ] };
+    key <AE07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, dollar, dollar ] };
+    key <AE08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceleft, braceleft ] };
+    key <AE09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, braceright, braceright ] };
+    key <AE10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, underscore, underscore ] };
+    key <AE11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, quotedbl ] };
 
     // Middle row
-    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, numbersign ] };
-    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
-    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
-    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
-    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, apostrophe, asciitilde ] };
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, ampersand, ampersand ] };
+    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
+    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
+    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
+    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
 
-    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus ] };
-    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, bracketleft ] };
-    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, bracketright ] };
-    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, ampersand ] };
-    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, bar ] };
+    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus ] };
+    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, parenleft ] };
+    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenright, parenright ] };
+    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, minus, minus ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, equal, equal ] };
 
     // Bottom row
-    key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, 7 ] };
-    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, 8 ] };
-    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, 9 ] };
-    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 0, 0 ] };
+    key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, bar, bar ] };
+    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, 7 ] };
+    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, 8 ] };
+    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, 9 ] };
+    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
 
-    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash, backslash ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, slash, at ] };
-    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, question ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, exclam ] };
+    key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash, backslash ] };
+    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, slash, slash ] };
+    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, comma, question ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, period, exclam ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, semicolon, colon ] };
 };
 
 partial alphanumeric_keys
@@ -143,41 +148,43 @@ xkb_symbols "function" {
     key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F1, F1 ] };
-    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F2, F2 ] };
-    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F3, F3 ] };
-    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F10, F10 ] };
+    key <AE02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86AudioMute, XF86AudioMute ] };
+    key <AE04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86AudioLowerVolume, XF86AudioLowerVolume ] };
+    key <AE05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86AudioRaiseVolume, XF86AudioRaiseVolume ] };
+    key <AE06> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
-    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, less, less ] };
+    key <AE09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, greater, greater ] };
+    key <AE10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, at, at ] };
+    key <AE11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     // Middle row
+    key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86AudioPlay, XF86AudioPlay ] };
+    key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86AudioPrev, XF86AudioPrev ] };
+    key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86AudioNext, XF86AudioNext ] };
+    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+
+    key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketleft, bracketleft ] };
+    key <AD09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, bracketright, bracketright ] };
+    key <AD10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, numbersign, numbersign ] };
+    key <AD11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, percent, percent ] };
+
+    // Bottom row
     key <AC01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F4, F4 ] };
-    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F5, F5 ] };
-    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F6, F6 ] };
-    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F11, F11 ] };
+    key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86MonBrightnessUp, XF86MonBrightnessUp ] };
+    key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, XF86MonBrightnessDown, XF86MonBrightnessDown ] };
+    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
     key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-
-    // Bottom row
-    key <AB01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F7, F7 ] };
-    key <AB02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F8, F8 ] };
-    key <AB03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F9, F9 ] };
-    key <AB04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, F12, F12 ] };
-
-    key <AB07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AB10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 };
 
 partial modifier_keys
@@ -185,33 +192,30 @@ xkb_symbols "modifier" {
     key.type[Group1] = "ONE_LEVEL";
 
     // Left column
-    key <TAB> { [ Tab ] };
-    key <CAPS> { [ Control_L ] };
-    modifier_map Control { <CAPS> };
-    key <LFSH> { [ Super_L ] };
-    modifier_map Mod4 { <LFSH> };
+    key <AE01> { [ Escape ] };
+    key <TAB> { [ Control_L ] };
+    modifier_map Control { <TAB> };
+    key <CAPS> { [ Super_L ] };
+    modifier_map Mod4 { <CAPS> };
+    key <LCTL> { [ Super_L ] };
+    modifier_map Mod4 { <LCTL> };
 
     // Bottom row
-    key <LWIN> { [ Alt_L ] };
-    modifier_map Mod1 { <LWIN> };
-    //key <LALT> { [ space ] };
-    //key <SPCE> { [ Shift_L ] };
-    //modifier_map Shift { <SPCE> };
-    key <LALT> { [ Shift_L ] };
-    modifier_map Shift { <LALT> };
-    key <SPCE> { [ space ] };
-    key <RALT> { symbols[Group1]=[ VoidSymbol ],
+    key <AB03> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
-    key <RCTL> { symbols[Group1]=[ VoidSymbol ],
-                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
-    include "level3(modifier_mapping)"
-    key <RWIN> { symbols[Group1]=[ VoidSymbol ],
+    key <AB04> { [ Shift_L ] };
+    modifier_map Shift { <AB04> };
+    key <AB05> { [ Alt_L ] };
+    modifier_map Mod1 { <AB05> };
+    key <AB06> { [ Tab ] };
+    key <AB07> { [ space ] };
+    key <AB08> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
 
     // Right column
-    key <AD12> { [ Delete ] };
+    key <AE12> { [ Delete ] };
+    key <AD12> { [ BackSpace ] };
     key <RTRN> { [ Return ] };
-    key <RTSH> { [ BackSpace ] };
 };
