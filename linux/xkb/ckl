@@ -121,7 +121,7 @@ xkb_symbols "symbol" {
     key <AD02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 4, 4 ] };
     key <AD03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 5, 5 ] };
     key <AD04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 6, 6 ] };
-    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
+    key <AD05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asterisk, asterisk ] };
 
     key <AD07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, plus, plus ] };
     key <AD08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, parenleft, parenleft ] };
@@ -134,7 +134,7 @@ xkb_symbols "symbol" {
     key <AC02> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 7, 7 ] };
     key <AC03> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 8, 8 ] };
     key <AC04> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, 9, 9 ] };
-    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
+    key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, asciitilde, asciitilde ] };
 
     key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, backslash, backslash ] };
     key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, slash, slash ] };
@@ -158,7 +158,7 @@ xkb_symbols "function" {
     key <AE08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, less, less ] };
     key <AE09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, greater, greater ] };
     key <AE10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, at, at ] };
-    key <AE11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AE11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, quotedbl, quotedbl ] };
 
     // Middle row
     key <AD01> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
@@ -181,10 +181,10 @@ xkb_symbols "function" {
     key <AC05> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
 
     key <AC07> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
-    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol ] };
+    key <AC08> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, grave, grave ] };
+    key <AC09> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, question, question ] };
+    key <AC10> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, exclam, exclam ] };
+    key <AC11> { [ NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, NoSymbol, colon, colon ] };
 };
 
 partial modifier_keys
