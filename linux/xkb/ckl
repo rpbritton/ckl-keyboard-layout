@@ -31,28 +31,28 @@ xkb_symbols "alphanumeric" {
             [ 1, 1 ],
             [ XF86AudioMute, XF86AudioMute ] };
     key <AE04> {
-            [ l, L ],
+            [ f, F ],
             [ F2, F2 ],
             [ 2, 2 ],
             [ XF86AudioLowerVolume, XF86AudioLowerVolume ] };
     key <AE05> {
-            [ d, D ],
+            [ p, P ],
             [ F3, F3 ],
             [ 3, 3 ],
             [ XF86AudioRaiseVolume, XF86AudioRaiseVolume ] };
     key <AE06> {
-            [ p, P ],
+            [ b, B ],
             [ F10, F10 ],
             [ asciicircum, asciicircum ],
             [ NoSymbol, NoSymbol ] };
 
     key <AE07> {
-            [ k, K ],
+            [ j, J ],
             [ NoSymbol, NoSymbol ],
             [ dollar, dollar ],
             [ NoSymbol, NoSymbol ] };
     key <AE08> {
-            [ m, M ],
+            [ l, L ],
             [ Home, Home ],
             [ braceleft, braceleft ],
             [ less, less ] };
@@ -67,10 +67,10 @@ xkb_symbols "alphanumeric" {
             [ underscore, underscore ],
             [ at, at ] };
     key <AE11> {
-            [ apostrophe, quotedbl ],
+            [ semicolon, colon ],
             [ NoSymbol, NoSymbol ],
-            [ apostrophe, quotedbl ],
-            [ quotedbl, quotedbl ] };
+            [ semicolon, colon ],
+            [ colon, colon ] };
 
     // Middle row
     key <AD01> {
@@ -79,12 +79,12 @@ xkb_symbols "alphanumeric" {
             [ ampersand, ampersand ],
             [ NoSymbol, NoSymbol ] };
     key <AD02> {
-            [ s, S ],
+            [ r, R ],
             [ F4, F4 ],
             [ 4, 4 ],
             [ XF86AudioPlay, XF86AudioPlay ] };
     key <AD03> {
-            [ r, R ],
+            [ s, S ],
             [ F5, F5 ],
             [ 5, 5 ],
             [ XF86AudioPrev, XF86AudioPrev ] };
@@ -100,7 +100,7 @@ xkb_symbols "alphanumeric" {
             [ NoSymbol, NoSymbol ] };
 
     key <AD07> {
-            [ f, F ],
+            [ m, M ],
             [ Page_Up, Page_Up ],
             [ plus, plus ],
             [ NoSymbol, NoSymbol ] };
@@ -142,18 +142,18 @@ xkb_symbols "alphanumeric" {
             [ 8, 8 ],
             [ XF86MonBrightnessUp, XF86MonBrightnessUp ] };
     key <AC04> {
-            [ v, V ],
+            [ d, D ],
             [ F9, F9 ],
             [ 9, 9 ],
             [ XF86MonBrightnessDown, XF86MonBrightnessDown ] };
     key <AC05> {
-            [ j, J ],
+            [ v, V ],
             [ F12, F12 ],
             [ asciitilde, asciitilde ],
             [ NoSymbol, NoSymbol ] };
 
     key <AC07> {
-            [ b, B ],
+            [ k, K ],
             [ NoSymbol, NoSymbol ],
             [ backslash, backslash ],
             [ NoSymbol, NoSymbol ] };
@@ -173,10 +173,10 @@ xkb_symbols "alphanumeric" {
             [ period, exclam ],
             [ exclam, exclam ] };
     key <AC11> {
-            [ semicolon, colon ],
+            [ apostrophe, quotedbl ],
             [ NoSymbol, NoSymbol ],
-            [ semicolon, colon ],
-            [ colon, colon ] };
+            [ apostrophe, quotedbl ],
+            [ quotedbl, quotedbl ] };
 };
 
 partial modifier_keys
