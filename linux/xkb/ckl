@@ -3,10 +3,7 @@
 
 default partial
 xkb_symbols "full" {
-    name[Group1]= "ckl base";
-    name[Group2]= "ckl navigation";
-    name[Group3]= "ckl symbols";
-    name[Group4]= "ckl functions";
+    name[Group1]= "English (CKL)";
 
     include "ckl(alphanumeric)"
     include "ckl(modifier)"
@@ -14,259 +11,227 @@ xkb_symbols "full" {
 
 default alphanumeric_keys
 xkb_symbols "alphanumeric" {
-    key.type[Group1] = "TWO_LEVEL";
-    key.type[Group2] = "TWO_LEVEL";
-    key.type[Group3] = "TWO_LEVEL";
-    key.type[Group4] = "TWO_LEVEL";
+    key.type[Group1] = "EIGHT_LEVEL";
 
     // Top row
-    key <AE02> {
-            [ q, Q ],
-            [ NoSymbol, NoSymbol ],
-            [ 0, 0 ],
-            [ NoSymbol, NoSymbol ] };
-    key <AE03> {
-            [ w, W ],
-            [ F1, F1 ],
-            [ 1, 1 ],
-            [ XF86AudioMute, XF86AudioMute ] };
-    key <AE04> {
-            [ f, F ],
-            [ F2, F2 ],
-            [ 2, 2 ],
-            [ XF86AudioLowerVolume, XF86AudioLowerVolume ] };
-    key <AE05> {
-            [ p, P ],
-            [ F3, F3 ],
-            [ 3, 3 ],
-            [ XF86AudioRaiseVolume, XF86AudioRaiseVolume ] };
-    key <AE06> {
-            [ b, B ],
-            [ F10, F10 ],
-            [ asciicircum, asciicircum ],
-            [ NoSymbol, NoSymbol ] };
+    key <AE02> { [
+            q, Q,
+            NoSymbol, NoSymbol,
+            0, 0,
+            NoSymbol, NoSymbol
+        ] };
+    key <AE03> { [
+            w, W,
+            F1, F1,
+            1, 1,
+            XF86AudioMute, XF86AudioMute
+        ] };
+    key <AE04> { [
+            f, F,
+            F2, F2,
+            2, 2,
+            XF86AudioLowerVolume, XF86AudioLowerVolume
+        ] };
+    key <AE05> { [
+            p, P,
+            F3, F3,
+            3, 3,
+            XF86AudioRaiseVolume, XF86AudioRaiseVolume
+        ] };
+    key <AE06> { [
+            b, B,
+            F10, F10,
+            asciicircum, asciicircum,
+            NoSymbol, NoSymbol
+        ] };
 
-    key <AE07> {
-            [ j, J ],
-            [ NoSymbol, NoSymbol ],
-            [ dollar, dollar ],
-            [ NoSymbol, NoSymbol ] };
-    key <AE08> {
-            [ l, L ],
-            [ Home, Home ],
-            [ braceleft, braceleft ],
-            [ less, less ] };
-    key <AE09> {
-            [ u, U ],
-            [ Up, Up ],
-            [ braceright, braceright ],
-            [ greater, greater ] };
-    key <AE10> {
-            [ y, Y ],
-            [ End, End ],
-            [ underscore, underscore ],
-            [ at, at ] };
-    key <AE11> {
-            [ semicolon, colon ],
-            [ NoSymbol, NoSymbol ],
-            [ semicolon, colon ],
-            [ colon, colon ] };
+    key <AE07> { [
+            j, J,
+            NoSymbol, NoSymbol,
+            dollar, dollar,
+            NoSymbol, NoSymbol
+        ] };
+    key <AE08> { [
+            l, L,
+            Home, Home,
+            braceleft, braceleft,
+            less, less
+        ] };
+    key <AE09> { [
+            u, U,
+            Up, Up,
+            braceright, braceright,
+            greater, greater
+        ] };
+    key <AE10> { [
+            y, Y,
+            End, End,
+            underscore, underscore,
+            at, at
+        ] };
+    key <AE11> { [
+            semicolon, colon,
+            NoSymbol, NoSymbol,
+            semicolon, colon,
+            colon, colon
+        ] };
 
     // Middle row
-    key <AD01> {
-            [ a, A ],
-            [ NoSymbol, NoSymbol ],
-            [ ampersand, ampersand ],
-            [ NoSymbol, NoSymbol ] };
-    key <AD02> {
-            [ r, R ],
-            [ F4, F4 ],
-            [ 4, 4 ],
-            [ XF86AudioPlay, XF86AudioPlay ] };
-    key <AD03> {
-            [ s, S ],
-            [ F5, F5 ],
-            [ 5, 5 ],
-            [ XF86AudioPrev, XF86AudioPrev ] };
-    key <AD04> {
-            [ t, T ],
-            [ F6, F6 ],
-            [ 6, 6 ],
-            [ XF86AudioNext, XF86AudioNext ] };
-    key <AD05> {
-            [ g, G ],
-            [ F11, F11 ],
-            [ asterisk, asterisk ],
-            [ NoSymbol, NoSymbol ] };
+    key <AD01> { [
+            a, A,
+            NoSymbol, NoSymbol,
+            ampersand, ampersand,
+            NoSymbol, NoSymbol
+        ] };
+    key <AD02> { [
+            r, R,
+            F4, F4,
+            4, 4,
+            XF86AudioPlay, XF86AudioPlay
+        ] };
+    key <AD03> { [
+            s, S,
+            F5, F5,
+            5, 5,
+            XF86AudioPrev, XF86AudioPrev
+        ] };
+    key <AD04> { [
+            t, T,
+            F6, F6,
+            6, 6,
+            XF86AudioNext, XF86AudioNext
+        ] };
+    key <AD05> { [
+            g, G,
+            F11, F11,
+            asterisk, asterisk,
+            NoSymbol, NoSymbol
+        ] };
 
-    key <AD07> {
-            [ m, M ],
-            [ Page_Up, Page_Up ],
-            [ plus, plus ],
-            [ NoSymbol, NoSymbol ] };
-    key <AD08> {
-            [ n, N ],
-            [ Left, Left ],
-            [ parenleft, parenleft ],
-            [ bracketleft, bracketleft ] };
-    key <AD09> {
-            [ e, E ],
-            [ Down, Down ],
-            [ parenright, parenright ],
-            [ bracketright, bracketright ] };
-    key <AD10> {
-            [ i, I ],
-            [ Right, Right ],
-            [ minus, minus ],
-            [ numbersign, numbersign ] };
-    key <AD11> {
-            [ o, O ],
-            [ Page_Down, Page_Down ],
-            [ equal, equal ],
-            [ percent, percent ] };
+    key <AD07> { [
+            m, M,
+            Page_Up, Page_Up,
+            plus, plus,
+            NoSymbol, NoSymbol
+        ] };
+    key <AD08> { [
+            n, N,
+            Left, Left,
+            parenleft, parenleft,
+            bracketleft, bracketleft
+        ] };
+    key <AD09> { [
+            e, E,
+            Down, Down,
+            parenright, parenright,
+            bracketright, bracketright
+        ] };
+    key <AD10> { [
+            i, I,
+            Right, Right,
+            minus, minus,
+            numbersign, numbersign
+        ] };
+    key <AD11> { [
+            o, O,
+            Page_Down, Page_Down,
+            equal, equal,
+            percent, percent
+        ] };
 
     // Bottom row
-    key <AC01> {
-            [ z, Z ],
-            [ NoSymbol, NoSymbol ],
-            [ bar, bar ],
-            [ NoSymbol, NoSymbol ] };
-    key <AC02> {
-            [ x, X ],
-            [ F7, F7 ],
-            [ 7, 7 ],
-            [ NoSymbol, NoSymbol ] };
-    key <AC03> {
-            [ c, C ],
-            [ F8, F8 ],
-            [ 8, 8 ],
-            [ XF86MonBrightnessUp, XF86MonBrightnessUp ] };
-    key <AC04> {
-            [ d, D ],
-            [ F9, F9 ],
-            [ 9, 9 ],
-            [ XF86MonBrightnessDown, XF86MonBrightnessDown ] };
-    key <AC05> {
-            [ v, V ],
-            [ F12, F12 ],
-            [ asciitilde, asciitilde ],
-            [ NoSymbol, NoSymbol ] };
+    key <AC01> { [
+            z, Z,
+            NoSymbol, NoSymbol,
+            bar, bar,
+            NoSymbol, NoSymbol
+        ] };
+    key <AC02> { [
+            x, X,
+            F7, F7,
+            7, 7,
+            NoSymbol, NoSymbol
+        ] };
+    key <AC03> { [
+            c, C,
+            F8, F8,
+            8, 8,
+            XF86MonBrightnessUp, XF86MonBrightnessUp
+        ] };
+    key <AC04> { [
+            d, D,
+            F9, F9,
+            9, 9,
+            XF86MonBrightnessDown, XF86MonBrightnessDown
+        ] };
+    key <AC05> { [
+            v, V,
+            F12, F12,
+            asciitilde, asciitilde,
+            NoSymbol, NoSymbol
+        ] };
 
-    key <AC07> {
-            [ k, K ],
-            [ NoSymbol, NoSymbol ],
-            [ backslash, backslash ],
-            [ NoSymbol, NoSymbol ] };
-    key <AC08> {
-            [ h, H ],
-            [ NoSymbol, NoSymbol ],
-            [ slash, slash ],
-            [ grave, grave ] };
-    key <AC09> {
-            [ comma, question ],
-            [ NoSymbol, NoSymbol ],
-            [ comma, question ],
-            [ question, question ] };
-    key <AC10> {
-            [ period, exclam ],
-            [ NoSymbol, NoSymbol ],
-            [ period, exclam ],
-            [ exclam, exclam ] };
-    key <AC11> {
-            [ apostrophe, quotedbl ],
-            [ NoSymbol, NoSymbol ],
-            [ apostrophe, quotedbl ],
-            [ quotedbl, quotedbl ] };
+    key <AC07> { [
+            k, K,
+            NoSymbol, NoSymbol,
+            backslash, backslash,
+            NoSymbol, NoSymbol
+        ] };
+    key <AC08> { [
+            h, H,
+            NoSymbol, NoSymbol,
+            slash, slash,
+            grave, grave
+        ] };
+    key <AC09> { [
+            comma, question,
+            NoSymbol, NoSymbol,
+            comma, question,
+            question, question
+        ] };
+    key <AC10> { [
+            period, exclam,
+            NoSymbol, NoSymbol,
+            period, exclam,
+            exclam, exclam
+        ] };
+    key <AC11> { [
+            apostrophe, quotedbl,
+            NoSymbol, NoSymbol,
+            apostrophe, quotedbl,
+            quotedbl, quotedbl
+        ] };
 };
 
 partial modifier_keys
 xkb_symbols "modifier" {
     key.type[Group1] = "ONE_LEVEL";
-    key.type[Group2] = "ONE_LEVEL";
-    key.type[Group3] = "ONE_LEVEL";
-    key.type[Group4] = "ONE_LEVEL";
 
     // Left column
-    key <AE01> {
-        [ Escape ],
-        [ Escape ],
-        [ Escape ],
-        [ Escape ] };
-    key <TAB> {
-        [ Control_L ],
-        [ Control_L ],
-        [ Control_L ],
-        [ Control_L ] };
+    key <AE01> { [ Escape ] };
+    key <TAB> { [ Control_L ] };
     modifier_map Control { <TAB> };
-    key <CAPS> {
-        [ Super_L ],
-        [ Super_L ],
-        [ Super_L ],
-        [ Super_L ] };
+    key <CAPS> { [ Super_L ] };
     modifier_map Mod4 { <CAPS> };
-    key <LCTL> {
-        [ Super_L ],
-        [ Super_L ],
-        [ Super_L ],
-        [ Super_L ] };
+    key <LCTL> { [ Super_L ] };
     modifier_map Mod4 { <LCTL> };
 
     // Bottom row
-    key <AB03> {
-        symbols[Group1] = [ VoidSymbol ],
-        symbols[Group2] = [ VoidSymbol ],
-        symbols[Group3] = [ VoidSymbol ],
-        symbols[Group4] = [ VoidSymbol ],
-        actions[Group1] = [ SetGroup(group = 3) ],
-        actions[Group2] = [ SetGroup(group = 4) ],
-        actions[Group3] = [ NoAction() ],
-        actions[Group4] = [ NoAction() ] };
-    key <AB04> {
-        [ Shift_L ],
-        [ Shift_L ],
-        [ Shift_L ],
-        [ Shift_L ] };
+    key <AB03> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelFive) ] };
+    include "level5(modifier_mapping)"
+    key <AB04> { [ Shift_L ] };
     modifier_map Shift { <AB04> };
-    key <AB05> {
-        [ Alt_L ],
-        [ Alt_L ],
-        [ Alt_L ],
-        [ Alt_L ] };
+    key <AB05> { [ Alt_L ] };
     modifier_map Mod1 { <AB05> };
-    key <AB06> {
-        [ Tab ],
-        [ Tab ],
-        [ Tab ],
-        [ Tab ] };
-    key <AB07> {
-        [ space ],
-        [ space ],
-        [ space ],
-        [ space ] };
-    key <AB08> {
-        symbols[Group1] = [ VoidSymbol ],
-        symbols[Group2] = [ VoidSymbol ],
-        symbols[Group3] = [ VoidSymbol ],
-        symbols[Group4] = [ VoidSymbol ],
-        actions[Group1] = [ SetGroup(group = 2) ],
-        actions[Group2] = [ NoAction() ],
-        actions[Group3] = [ SetGroup(group = 4) ],
-        actions[Group4] = [ NoAction() ] };
+    key <AB06> { [ Tab ] };
+    key <AB07> { [ space ] };
+    key <AB08> { symbols[Group1]=[ VoidSymbol ],
+                 actions[Group1]=[ SetMods(mods=LevelThree) ] };
+    include "level3(modifier_mapping)"
 
     // Right column
-    key <AE12> {
-        [ Delete ],
-        [ Delete ],
-        [ Delete ],
-        [ Delete ] };
-    key <AD12> {
-        [ BackSpace ],
-        [ BackSpace ],
-        [ BackSpace ],
-        [ BackSpace ] };
-    key <RTRN> {
-        [ Return ],
-        [ Return ],
-        [ Return ],
-        [ Return ] };
+    key <AE12> { [ Delete ] };
+    key <AD12> { [ BackSpace ] };
+    key <RTRN> { [ Return ] };
 };
