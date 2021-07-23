@@ -217,18 +217,19 @@ xkb_symbols "modifier" {
     modifier_map Mod4 { <LCTL> };
 
     // Bottom row
-    key <AB03> { symbols[Group1]=[ VoidSymbol ],
+    key <AB03> { [ Alt_L ] };
+    modifier_map Mod1 { <AB05> };
+    key <AB04> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelFive) ] };
     include "level5(modifier_mapping)"
-    key <AB04> { [ Shift_L ] };
+    key <AB05> { [ Shift_L ] };
     modifier_map Shift { <AB04> };
-    key <AB05> { [ Alt_L ] };
-    modifier_map Mod1 { <AB05> };
-    key <AB06> { [ Tab ] };
-    key <AB07> { [ space ] };
-    key <AB08> { symbols[Group1]=[ VoidSymbol ],
+
+    key <AB06> { [ space ] };
+    key <AB07> { symbols[Group1]=[ VoidSymbol ],
                  actions[Group1]=[ SetMods(mods=LevelThree) ] };
     include "level3(modifier_mapping)"
+    key <AB08> { [ Tab ] };
 
     // Right column
     key <AE12> { [ Delete ] };
