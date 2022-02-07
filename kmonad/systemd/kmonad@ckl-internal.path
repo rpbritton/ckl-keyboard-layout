@@ -1,5 +1,5 @@
 [Unit]
-Description=kmonad ckl-hhkb
+Description=kmonad ckl-internal
 StartLimitIntervalSec=400
 StartLimitBurst=3
 
