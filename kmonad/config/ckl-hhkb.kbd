@@ -37,9 +37,9 @@
 )
 
 (deflayer base
-  lmet q    w    f    p    b         j    l    u    y    '    esc
-  lctl a    r    s    t    g         m    n    e    i    o    lalt
-       z    x    c    d    v         k    h    ,    .    ;
+  lmet q    d    r    w    b         j    f    u    p    '    esc
+  lctl a    s    h    t    g         y    n    e    o    i    lalt
+       z    x    m    c    v         k    l    ,    .    ;
                  @sym bspc lsft      ret  spc  @nav
 
   XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX XX
